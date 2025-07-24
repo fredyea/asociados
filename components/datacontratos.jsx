@@ -1,0 +1,73 @@
+import React from "react";
+const columns = [
+  {name: "CONTRATO", uid: "contrato"},
+  {name: "VALOR", uid: "valor"},
+  {name: "FECHA", uid: "fecha"},
+  {name: "STATUS", uid: "status"},
+  {name: "ACTIONS", uid: "actions"},
+];
+
+const users = [
+  {
+    id: 1,
+    contrato: "ARTTR45656",
+    valor: "5.000.000.oo",
+    fecha: "Enero 31 del 2023",
+    facturacion: "590909",
+    pagos: "Secretaria de Planeacion",
+    status: "Pendiente informe 1",
+    age: "29",
+    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+    email: "MUNICIPIO  DE CARTAGO",
+  },
+  {
+    id: 2,
+    contrato: "ARTTR45656",
+    valor: "5.000.000.oo",
+    fecha: "Enero 31 del 2023",
+    facturacion: "590909",
+    pagos: "Secretaria de Planeacion",
+    status: "Pendiente informe 2",
+    age: "29",
+    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+    email: "MUNICIPIO  DE CARTAGO",
+  },
+  {
+    id: 3,
+    contrato: "ARTTR45656",
+    valor: "5.000.000.oo",
+    fecha: "Enero 31 del 2023",
+    facturacion: "590909",
+    pagos: "Secretaria de Planeacion",
+    status: "Pendiente informe 1",
+    age: "29",
+    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+    email: "MUNICIPIO  DE CARTAGO",
+  },
+  {
+    id: 4,
+    contrato: "ARTTR45656",
+    valor: "5.000.000.oo",
+    fecha: "Enero 31 del 2023",
+    facturacion: "590909",
+    pagos: "Secretaria de Planeacion",
+    status: "Pendiente informe 1",
+    age: "29",
+    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+    email: "MUNICIPIO  DE CARTAGO",
+  },
+  {
+    id: 5,
+    contrato: "ARTTR45656",
+    valor: "ASRR",
+    fecha: "Enero 31 del 2023",
+    facturacion: "590909",
+    pagos: "Secretaria de Planeacion",
+    status: "Pendiente informe 1",
+    age: "29",
+    avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+    email: "MUNICIPIO  DE CARTAGO",
+  },
+];
+
+export {columns, users};

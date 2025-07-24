@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.principal {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; /* Tres filas, la del medio ocupa el espacio restante */
+    min-height: 100vh; /* Al menos 100% de la altura de la ventana */
+    background-color: #ffffff; /* Color de fondo para la clase principal */
+  }
+
+  .header {
+    padding: 1px;
+  }
+
+  .cuerpo {
+    display: grid;
+    grid-template-columns: 1fr; /* Inicialmente, una columna para dispositivos pequeños */
+    gap: 20px; /* Espacio entre las columnas */
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100vh; /* Asegura que la cuadrícula ocupe toda la altura de la pantalla */
+    place-items: center; /* Centra el contenido vertical y horizontalmente */
+    justify-self: center; /* Centra horizontalmente dentro del contenedor */
+  }
+
+  .logo {
+    grid-column: span 1; /* El logo ocupa una columna completa inicialmente */
+    padding: 20px; 
+  }
+
+  .aside {
+    padding: 20px;
+    justify-self: flex-start; /* Alinea a la izquierda horizontalmente dentro del contenedor */
+  }
+
+  /* Ajustar el diseño en dispositivos más grandes */
+  @media screen and (min-width: 768px) {
+
+    .logo {
+      grid-column: span 1; /* El logo ocupa el 70% del ancho en dispositivos más grandes */
+    }
+
+    .aside {
+      grid-column: span 1; /* El aside ocupa el 30% del ancho en dispositivos más grandes */
+    }
+  }
+
+  .footer {
+    padding: 0px; 
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .logo {
+      max-width: 100%; /* Hace que el logo ocupe el ancho completo del contenedor en dispositivos pequeños */
+    }
+  }
+
+  .line {
+    height: 0px;
+    border-bottom: 10px solid #fafafa;;
+    margin: 0
+  }
+
+
+  .footerx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* altura de pie de página */
+  }
+
+  .footerx {
+    background-color: #3c8db6;
+    padding: .5rem .8rem;
+  }
+  .footerx p {
+    color: rgba(255,255,255,9);
+    font-family: 'segoe ui';
+    text-align: center;
+  }
+
+  .custom-row {
+    display: flex;
+    justify-content: space-between; /* Ajusta según tus necesidades */
+  }
+  
+  .custom-col {
+    flex: 1;
+    margin-right: 10px; /* Ajusta según tus necesidades */
+  }
+
+
+  .contenedord {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .filad {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .columnad {
+    flex: 1;
+    min-width: 0; /* Evita que el contenido no se ajuste en dispositivos pequeños */
+    padding: 10px;
+    /*border: 1px solid #ccc; */
+    /*box-sizing: border-box; */
+  }
+
+  .AccordionItem-title::before {
+    content: '';
+    display: inline-block;
+    width: 8px; /* Ancho del color de fondo */
+    height: 100%; /* Altura del color de fondo */
+    background-color: #284C60; /* Reemplaza 'tuColor' con el color que desees */
+    margin-right: 8px; /* Espacio entre el color de fondo y el texto del título */
+  }
+
+  
+  .contenedoruno {
+    background-color: rgb(250, 221, 221);
+    display: flex;
+    height: 100vh; /* Establece la altura al 100% de la altura de la ventana del navegador */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+}
+
+.parteuno {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 75%; /* Ocupa el 75% del ancho del contenedor padre */
+  object-fit: contain; /* Mantiene la relación de aspecto de la imagen */
+  height: 100vh;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+}
+
+
+
+
+.partedos {
+    background-color: white;
+    display: flex;
+    width: 25%; /* Ocupa el 75% del ancho del contenedor padre */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: auto;
+    height: 100%; /* Asegura que el contenedor ocupe todo el alto disponible */
+}
+
+
+/* Ocultar en dispositivos móviles */
+@media (max-width: 768px) {
+  .parteuno {
+    display: none;
+  }
+  .partedos {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+   }
+}
+
+
+.containerinicial {
+  background-color: rgb(240, 240, 243);
+}
+
+.cards-container {
+  display: flex;
+  gap: 10px; /* Espaciado entre tarjetas */
+  padding: 10px; /* Margen de 10px desde los bordes */
+}
+
+.card {
+  max-width: 400px;
+  flex: 1; /* Permite que las tarjetas se redimensionen */
+}
+
+.rowx {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Espacio entre elementos */
+}
+
+.hx5 {
+  max-width: 300px; /* Ajusta este valor según tus necesidades */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.responsive-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 2000px;
+  max-height: 1000px;
+  width: 100%;
+  height: 100%;
+}
+
+.responsive-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
